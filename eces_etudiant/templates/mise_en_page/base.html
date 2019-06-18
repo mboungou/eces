@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mon premier site</title>
+	<meta charset="utf-8">
+	<meta name="author" content="MBOUNGOU MITOLO Immaculée">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}"/>
+
+
+</head>
+<body>
+	<div class="page">
+		<div class="entête">
+
+{% include "mise_en_page/navbar.html" %}
+		</div>
+		<div class="corps">
+			{% block content %}
+
+			{% endblock %}
+
+	    </div>
+
+	    <div class="pied">
+	    	{% include "mise_en_page/footer.html" %}
+
+	    </div>
+
+
+</div>
+</body>
+</html>

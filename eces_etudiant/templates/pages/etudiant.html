@@ -1,0 +1,31 @@
+{% extends 'mise_en_page/base.html' %}
+
+{% block content %}
+
+
+</br></br>
+
+
+<center>
+	<h2>Liste des étudiants enregistrés</h2></br>
+
+	<table class="etudiant">
+
+<tr>
+	<td>
+		<ul>
+		{% for etu  in  etudiant %}
+			<center><li><a class="link" href="{% url 'voir_etudiant' etu.id %}">{{ etu.matricule}}-{{etu.nom }}</a> </li></center>
+		{% endfor %}
+</ul>
+	</td>
+</tr>
+</table>
+
+</center>
+
+
+{% endblock %}
+
+
+

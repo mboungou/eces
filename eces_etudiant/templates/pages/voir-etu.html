@@ -1,0 +1,21 @@
+{% extends 'mise_en_page/base.html' %}
+{% block content %}
+<center>
+	<div class='voir'>
+		<div class='imagevoir' >
+<img src="{{object.photo.url}}">
+            </div>
+           
+<br><div class="descriptionvoir">
+Matricule : <b>{{object.matricule}}</b><br><br>
+Nom Etudiant: <b>{{object.nom}}</b> <br><br>
+
+Adresse : <b>{{object.adress}}</b><br><br>
+Option: <b>{{object.option}} </b> <br><br>
+Niveau : <b>{{object.niveau}}</b><br><br>
+Description : <b>{{object.description}}</b>
+
+</div>
+</center>
+
+{% endblock %}
